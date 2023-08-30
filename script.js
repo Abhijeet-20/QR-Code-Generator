@@ -1,7 +1,7 @@
-let imgbox = document.getElementById("imgbox");
+        let imgbox = document.getElementById("imgbox");
         let qrimg1 = document.getElementById("qrimg1");
         let url = document.getElementById("url");
-        
+
         function generate(){
             if(url.value.length > 0){
             qrimg1.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + url.value;
